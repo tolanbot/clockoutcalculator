@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     const testFormat = (str1, str2, str3) =>{
-        const regex = /^[0-9]{1,2}:[0-9]{1,2}\s*(?:[APap][Mm])?$/;
+        const regex = /^[0-9]{1,2}:[0-5][0-9]\s*[APap][Mm]$/;
         try{
             if(!regex.test(str1) || !regex.test(str2) || !regex.test(str3)){
                 alert("TIME FORMAT SHOULD BE 'h:mm' ENDING IN 'AM/am' or 'PM/pm'")
