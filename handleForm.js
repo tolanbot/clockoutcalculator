@@ -90,8 +90,6 @@ document.addEventListener('DOMContentLoaded', function () {
         let remainingTime = TARGET_TIME - timeBlock1
         let outTime = new Date(lunchEndValue.getTime() + remainingTime * 60000)
         let timeString = outTime.toLocaleTimeString(undefined, {hour: 'numeric', minute:'2-digit'})
-        // let timeBoxText = document.getElementById("timeBox")
-        // timeBoxText.textContent = timeString
         document.getElementById("timeBox").innerHTML = timeString
     })
     timeForm.addEventListener("reset", (e)=>{
@@ -99,12 +97,3 @@ document.addEventListener('DOMContentLoaded', function () {
         timeBoxText.textContent = ""
     }) 
 })
-
-    // console.log('lunchDuration: ', lunchDuration)
-    // console.log('timeBlock1: ', timeBlock1)
-    // console.log('shiftStartValue: ', shiftStartValue)
-    // console.log('lunchStartValue: ',lunchStartValue)
-    // console.log('lunchEndValue: ', lunchEndValue)
-    // console.log('shiftStartElement.value: ', shiftStartElement.value)
-    // console.log('lunchStartElement.value', lunchStartElement.value)
-    // console.log('lunchEndElement.value: ', lunchEndElement.value)
