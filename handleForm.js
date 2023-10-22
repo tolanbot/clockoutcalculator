@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let timeBoxText = document.getElementById("timeBox")
             timeBoxText.textContent = ""
             console.warn("LUNCH MUST BE AT LEAST 31 MINUTES")
-            window.alert("LUNCH MUST BE AT LEAST 31 MINUTES")
+            alert("LUNCH MUST BE AT LEAST 31 MINUTES")
             return
         }
         let remainingTime = TARGET_TIME - timeBlock1
