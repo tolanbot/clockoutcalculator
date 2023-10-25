@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const TARGET_TIME = 480
 
     const subtractTime = (date2, date1)=>{
-            console.log("gettime1: ", date2.getTime())
-            console.log("gettime2: ", date1.getTime())
             return Math.floor((date2.getTime()-date1.getTime())/60000)
     }
 
