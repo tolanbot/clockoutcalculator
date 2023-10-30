@@ -3,99 +3,86 @@
     <head>
         <script src="./handleForm.js"></script>
         <style>
-            body {
-                /* background-color: rgb(92, 184, 224); */
+            body, html{
                 background-color: darkgrey;
-                margin-top: 15vh;
                 font-family: 'Courier New', Courier, monospace;
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh; /*Set a minimum height for centering */
             }
             .centered {
-                display:flex;
-                justify-content: center;
+                display: flex;
+                flex-direction: column;
                 align-items: center;
                 background-color: rgb(217, 210, 210);
-                height: 25em;
+                height: 28em;
                 width: 30em;
-                margin-left: auto;
-                margin-right: auto;
-                /* margin-top: -5vh; */
-                margin-bottom: auto;
-                padding-bottom: 10vh;
                 border: 0.5em solid black;
                 border-radius: 20px;
+                padding-top: 2em;
             }
             .textCentered {
-                display:flex;
+                display: flex;
                 justify-content: center;
-                align-items: center;
-                background-color: rgb(217, 210, 210);
-                height: 5em;
+                /* align-items: center; */
+                height: 4em;
                 width: 30em;
-                margin-top: -10em;
-                margin-left: auto;
-                margin-right: auto;
-                padding-bottom: 5vh;
+                padding-top: 1em;
             }
-            .displayTime{
+            .displayTime {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-top: -4em;
                 background-color: gray;
                 width: 10em;
                 height: 3em;
-                margin-left: auto;
-                margin-right: auto;
                 border-radius: 20px;
             }
-            .title{
+            .title {
                 text-align: center;
                 border: 0.5em solid black;
                 border-radius: 20px;
-                padding: 5px;
-                width: 29.35em;
-                margin-left: auto;
-                margin-right: auto;
+                width: 30em;
                 background-color: rgb(217, 210, 210);
             }
-            .formFormat{
+            .formFormat {
                 border-radius: 5px;
                 font-family: 'Courier New', Courier, monospace;
-            }
-            .footer{
-                position: relative;
-                left: -10em;
-                display: flex;
-                justify-content: center;
-                align-items: center;
             }
         </style>
     </head>
     <body>
-        <div class="title">
-            <h2>CLOCK OUT CALCULATOR</h2>
-        </div>
-        <div class="centered" >
-            <form action="" id="timeForm" class="formFormat">
-                <h3>CLOCK IN</h3>
-                <input type="text" maxlength="7" placeholder="Clock In" id="shift-in" class="formFormat">
-                <h3>LUNCH OUT</h3>
-                <input type="text" maxlength="7" placeholder="Lunch Out" id="lunch-out"  class="formFormat">
-                <h3>LUNCH IN</h3>
-                <input type="text" maxlength="7" placeholder="Lunch In" id="lunch-in" class="formFormat">
-                <br>
-                <button type="submit" style="margin-top: 1em; border-radius: 20px;">Submit</button>
-                <button type="reset"style="margin-top: 1em; border-radius: 20px;">Reset</button>
-            </form>
-        </div>
-        <div class="textCentered">
-            <h3>YOU SHOULD CLOCK OUT AT:</h3>
-        </div>
-        <div class="displayTime">
-            <h3 id="timeBox"></h3>
-        </div>
-        <div class="footer">
-            <p>@christolan</p>
+        <div class="container">
+            <div class="title">
+                <h2>CLOCK OUT CALCULATOR</h2>
+            </div>
+            <div class="centered">
+                <form action="" id="timeForm" class="formFormat">
+                    <h3>CLOCK IN</h3>
+                    <input type="text" maxlength="7" placeholder="Clock In" id="shift-in" class="formFormat">
+                    <h3>LUNCH OUT</h3>
+                    <input type="text" maxlength="7" placeholder="Lunch Out" id="lunch-out" class="formFormat">
+                    <h3>LUNCH IN</h3>
+                    <input type="text" maxlength="7" placeholder="Lunch In" id="lunch-in" class="formFormat">
+                    <br>
+                    <button type="submit" style="margin-top: 1em; border-radius: 20px;">Submit</button>
+                    <button type="reset" style="margin-top: 1em; border-radius: 20px;">Reset</button>
+                </form>
+                <div class="textCentered">
+                    <h3>YOU SHOULD CLOCK OUT AT:</h3>
+                </div>
+                <div class="displayTime">
+                    <h3 id="timeBox"></h3>
+                </div>
+            </div>
         </div>
     </body>
+    <footer></footer>
 </html>
