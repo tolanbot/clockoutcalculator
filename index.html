@@ -56,6 +56,21 @@
                 border-radius: 5px;
                 font-family: 'Courier New', Courier, monospace;
             }
+            p {
+                transition: 0.5s;
+            }
+            p::before {
+                background: #ffee10;
+                transition: .5s;
+                transform: scale(.9);
+                z-index: -1;
+            }
+            p:hover::before {
+                transform: scale(1.1);
+            }
+            p:hover {
+                color: #ffee10;
+            }
         </style>
     </head>
     <body>
@@ -80,6 +95,9 @@
                 </div>
                 <div class="displayTime">
                     <h3 id="timeBox"></h3>
+                </div>
+                <div style="transform: translateX(-160%);">
+                    <p>@christolan</p>
                 </div>
             </div>
         </div>
