@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const zeroRegex = /^[0]{1,2}:[0]{1,2}\s*[APap][Mm]$/
         const regex = /^[0-9]{1,2}:[0-5][0-9]\s*[APap][Mm]$/;
         try{
-            if(zeroRegex.test(str1) || zeroRegex.test(str2) || zeroRefex.test(str3) || !regex.test(str1) || !regex.test(str2) || !regex.test(str3)){
+            if(zeroRegex.test(str1) || zeroRegex.test(str2) || zeroRegex.test(str3) || !regex.test(str1) || !regex.test(str2) || !regex.test(str3)){
                 alert("TIME FORMAT SHOULD BE 'h:mm' ENDING IN 'AM/am' or 'PM/pm'")
                 throw new Error()
             }
